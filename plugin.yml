@@ -1,0 +1,10 @@
+name: Git Shallow Clone
+description: Enables step-level git shallow clone configuration
+author: https://github.com/automattic
+requirements:
+  - 'git'
+configuration:
+  properties:
+    depth:
+      type: number
+  additionalProperties: false
