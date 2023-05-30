@@ -3,5 +3,5 @@
 # Hooks are sourced, so we need to set flags via `set`, not shebang.
 set -eu
 
-export BUILDKITE_GIT_CLONE_FLAGS="-v --depth ${DEPTH}"
-export BUILDKITE_GIT_FETCH_FLAGS="-v --depth ${DEPTH}"
+export BUILDKITE_GIT_CLONE_FLAGS="-v --depth=1"
+export BUILDKITE_GIT_FETCH_FLAGS="-v --depth=1"
