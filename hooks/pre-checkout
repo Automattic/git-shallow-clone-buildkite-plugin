@@ -3,7 +3,7 @@
 # Hooks are sourced, so we need to set flags via `set`, not shebang.
 set -eu
 
-OPTIONS="-v --depth=1"
+OPTIONS="--verbose --depth=1"
 
 export BUILDKITE_GIT_CLONE_FLAGS="$OPTIONS"
 export BUILDKITE_GIT_FETCH_FLAGS="$OPTIONS"
