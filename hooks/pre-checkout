@@ -5,5 +5,7 @@ set -eu
 
 OPTIONS="--verbose --depth=1"
 
-export BUILDKITE_GIT_CLONE_FLAGS="$OPTIONS"
+# --depth does not affect submodules when cloning; from the manpage:
+# If you want to clone submodules shallowly, also pass --shallow-submodules.
+export BUILDKITE_GIT_CLONE_FLAGS="$OPTIONS --shallow-submodules"
 export BUILDKITE_GIT_FETCH_FLAGS="$OPTIONS"
